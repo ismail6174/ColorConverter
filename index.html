@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Converter (HEX, RGB, HSL) with Theme Switch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="converter">
+  
+  <button  id="themeToggleBtn" onclick="toggleTheme()">Switch 🌙/🔅</button>
+    <h1>Color Converter</h1>
+        <hr />
+
+    <!-- HEX Input -->
+        <h1>HEX to RGB</h1>
+    <input type="text" id="hexInput" placeholder="Enter HEX (e.g., #fff or #ff5733)" oninput="convertHex()" />
+    <input type="text" id="rgbOutput" placeholder="RGB result" readonly />
+    <button onclick="copyText('rgbOutput')">Copy RGB</button><br />
+    <div class="colorPreview" id="colorPreview"></div>
+    <hr />
+    <h1>HEX to HSL</h1>
+    <input type="text" id="hslOutput" placeholder="HSL result" readonly />
+    <button onclick="copyText('hslOutput')">Copy HSL</button>
+
+    <hr />
+
+    <!-- RGB to HEX -->
+    <h1>RGB to HEX</h1>
+    <input type="text" id="rgbInput" placeholder="Enter RGB (e.g.  255,87,51)" oninput="convertRGB()" />
+    <input type="text" id="hexOutput" placeholder="HEX result" readonly />
+    <button onclick="copyText('hexOutput')">Copy HEX</button>
+
+    <div class="colorPreview" id="colorPreview"></div>
+  </div>
+
+<footer style="position: relative; top: 80px; width: 100%; text-align: center; font-size: 14px; color: gray;">
+    © 2025 Ismail Shah | Built with ❤️ by 
+    <a href="https://github.com/ismail6174" target="_blank" style="color:gray; text-decoration: underline;">ismail6174</a>
+  </footer>
+
+
+  <script src="app.js">
+    
+  </script>
+
+</body>
+</html>
